@@ -7,7 +7,7 @@
 
 <body>
     <div style="width:70%; margin:0 auto;" id="root-md-container">
-
+        <h3>Live Markdown Preview</h3>
     </div>
 </body>
 
@@ -27,10 +27,10 @@
     }
 
     window.onload = function () {
-        md = document.createElement("zero-md")
-        md.setAttribute("src", getQuery("src"))
-        md.setAttribute("no-shadow", "")
-        document.getElementById("root-md-container").append(md)
+        md = document.createElement("zero-md");
+        md.setAttribute("src", getQuery("src"));
+        md.setAttribute("no-shadow", "");
+        document.getElementById("root-md-container").html(md);
     }
 </script>
 
